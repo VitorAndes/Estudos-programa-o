@@ -96,6 +96,13 @@ li{
   color:white;
 }
 
+.menu, .contatos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
 
 /* COLORS */
 
