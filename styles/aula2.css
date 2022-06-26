@@ -24,6 +24,7 @@
 
 body{
   background:linear-gradient(85deg,var(--bg-color));
+
 }
 
 h1{
@@ -75,9 +76,15 @@ a{
  
 }
 
+ul{
+  margin-left:3rem;
+  display:grid;
+  
+}
+
 li{
   color:black;
-  margin-left:3.5rem;
+ 
 }
 
 
@@ -132,12 +139,5 @@ li{
   color:var(--hsl-one);
 }
 
-.Ebg{
-  background-color:Rgb(55, 100, 50);
-}
-
-.Ibg{
-  background-image:url(https://images.unsplash.com/photo-1654938900760-1419ee86bc1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM2fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-}
 
 
