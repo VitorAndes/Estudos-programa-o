@@ -8,15 +8,29 @@
     <link rel="stylesheet" href="styles/aula2.css" />
   </head>
   <body>
-    <h1>Evolua Rápido</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure corrupti
-      voluptatem error sed officiis beatae dolorum natus fuga et? Ratione
-      voluptatem dolorum tenetur sapiente iste nobis doloremque, vitae
-      praesentium modi.
-    </p>
+    <header>
+      <h1>Evolua Rápido</h1>
+    </header>
 
     <main>
+
+      <!-- <nav class="menu">
+        <a href="#margin">Margin</a>
+        <a href="#padding">Padding</a>
+        <a href="#colors">Colors</a>
+        <a href="#background">Background</a>
+        <a href="#video">Video</a>
+        <a href="#audio">Audio</a>
+        <a href="#iframe">Iframe</a>
+        <a href="#images">Images</a>
+        <a href="#bgimage">Background-image</a>
+        <a href="#figures">Figures</a>
+        <a href="#svg">Svg</a>
+        <a href="#pglayouts">Page Layouts</a>
+        <a href="#position">Position</a>
+        <a href="#flex">Flex</a>
+        <a href="#grid">Grid</a>
+      </nav> -->
 
       <section>
 
@@ -31,7 +45,7 @@
     
       <section>
 
-        <h2>Margin</h2>
+        <h2 id="margin">Margin</h2>
         <p>
           As propriedades CSS são usadas para criar espaço em torno de elementos,
           fora de quaisquer bordas definidas.margin Com css, você tem controle total
@@ -53,7 +67,7 @@
       </section>
         <section>
 
-          <h2>Padding</h2>
+          <h2 id="padding">Padding</h2>
           <p>
             As propriedades CSS são usadas para gerar espaço em torno do conteúdo de
             um elemento, dentro de quaisquer bordas definidas.padding Com CSS, você
@@ -74,7 +88,7 @@
         </section>
     <section>
 
-      <h2>Colors</h2>
+      <h2 id="colors">Colors</h2>
       
       <p>Color values:Keyword values,named color</p>
       <code>
@@ -131,7 +145,7 @@
   </section>
     <section>
 
-      <h2>Background</h2>
+      <h2 id="backgrounds">Background</h2>
       <code>
         <ul>
           <li>Background-color:Rgb(55, 100, 50);</li>
@@ -150,7 +164,7 @@
     </section>
 <section>
 
-  <h2>Video</h2>
+  <h2 id="video">Video</h2>
   <code>
     <ul>
       <li>
@@ -174,7 +188,7 @@
 </section>
   <section>
 
-    <h2>Audio</h2>
+    <h2 id="audio">Audio</h2>
     <code>
       <ul>
         <li>
@@ -191,7 +205,7 @@
   </section>
     <section>
 
-      <h2>Iframe</h2>
+      <h2 id="iframe">Iframe</h2>
       <code>
         <ul>
           <li>
@@ -212,7 +226,7 @@
   </section>
   <section>
 
-    <h2>Images</h2>
+    <h2 id="images">Images</h2>
     <code>
       <ul>
         <li>
@@ -228,7 +242,7 @@
   </section>
     <section>
 
-      <h2>Background-image</h2>
+      <h2 id="bgimage">Background-image</h2>
       <code>
         <ul>
           <li>
@@ -241,7 +255,7 @@
     </section>
     <section>
 
-      <h2>Figures</h2>
+      <h2 id="figures">Figures</h2>
       <code>
         <ul>
           <li>
@@ -268,12 +282,108 @@
       </a>
       <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/figure">Mais Sobre</a>
     </section>
+
+    <section>
+      <h2 id="svg">Svg</h2>
+      <code>
+        <ul>
+          <li>
+            &lt;svg width="" height=""&gt;<br>
+            &lt;circle cx="" cy="" r="" stroke="" stroke-width="" fill=""/&gt;<br>
+            &lt;/svg&gt;
+          </li>
+        </ul>
+      </code>
+        <svg width="300" height="110">
+          <circle cx="10rem" cy="4rem" r="4rem" stroke="green" stroke-width="4" fill="yellow"/> 
+        </svg>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/SVG">Mais Sobre</a>
+    </section>
+    <section>
+    <h2 id="pglayouts">Page Layouts</h2>
+    <code>
+      <ul>
+        <li>Tables</li>
+        <li>Floats e clear</li>
+        <li>Frameworks e Grid Systems</li>
+        <li>Flexbox</li>
+        <li>Grid</li>
+      </ul>
+    </code>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout">Mais Sobre</a>
+    </section>
+    <section>
+      <h2 id="position">Position</h2>
+      <code>
+        <ul>
+          <li>Static</li>
+          <li>Relative</li>
+          <li>Absolute</li>
+          <li>Fixed</li>
+        </ul>
+      </code>   
+      <div class="positionbox">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+      </div>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/position">Mais Sobre</a>
+
+    </section>
+    <section>
+      <h2 id="flex">Flex</h2>
+      <p>Flexbox</p>
+      <ul>
+        <li>* Nos permite posicionar os elementos dentro da caixa</li>
+        <li>* Controle em uma dimensão (Horizontal ou vertical)</li>
+        <li>* Alinhamento, direcionamento, ordernar e tamanhos</li>
+        <code>
+            <li>
+              ```css <br>
+              div.parent{
+                display:flex;
+              }
+              ````
+            </li>
+        </code>
+      </ul>
+      <p>Flex-direction</p>
+        <ul>
+          <li>* Qual a direção do flex:Horizontal ou vertical</li>
+          <li>* Row | Column</li>
+        </ul>
+        <p>Alinhamento</p>
+        <ul>
+          <li>* Justify-content</li>
+          <li>* align-items</li>
+        </ul>
+        <div class="container">
+          <div class="boxc blue"></div>
+          <div class="boxc red"></div>
+          <div class="boxc green"></div>
+        </div>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Mais Sobre</a>
+
+    </section>
+    <section>
+      <h2 id="grid">Grid</h2>
+      <ul>
+        <li>* Posicionamento dos elementos dentro da caixa</li>
+        <li>* Posicionamento Horizontal e vertical ao mesmo tempo</li>
+        <li>* Pode ser flexível ou fixo</li> 
+        <li>* Cria espaços para elementos filhos habitarem</li>
+      </ul>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Mais Sobre</a>
+    </section>
+    
+    
+  </main>
+    <footer>
+      <button>
+        <a href="index.html">Voltar </a>
+      </button> 
+    </footer>
       
       
-      
-      
-      <button>Voltar</button>
-      <a href="index.html">Voltar</a>
-    </main>
     </body>
 </html>
