@@ -37,7 +37,6 @@ body{
 
 header{
   grid-area: header;
-  display: flex;
 }
 
 main{
@@ -59,9 +58,10 @@ footer{
 h1{
   color:var(--txt-color);
   padding:2.0rem;
-  font-size:4.5rem;
+  font-size:4rem;
   font-family: 'Open Sans', sans-serif;
   font-weight:700;
+  margin-bottom:rem;
 
 }
 
