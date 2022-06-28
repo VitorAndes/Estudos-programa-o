@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aulas Css</title>
     <link rel="stylesheet" href="styles/aula2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -294,8 +297,8 @@
           </li>
         </ul>
       </code>
-        <svg width="300" height="110">
-          <circle cx="10rem" cy="4rem" r="4rem" stroke="green" stroke-width="4" fill="yellow"/> 
+        <svg width="200" height="115">
+          <circle  cx="8rem" cy="5rem" r="4rem" stroke="green" stroke-width="4" fill="yellow"/> 
         </svg>
         <a href="https://developer.mozilla.org/pt-BR/docs/Web/SVG">Mais Sobre</a>
     </section>
@@ -332,7 +335,7 @@
     </section>
     <section>
       <h2 id="flex">Flex</h2>
-      <p>Flexbox</p>
+      <h3>Flexbox</h3>
       <ul>
         <li>* Nos permite posicionar os elementos dentro da caixa</li>
         <li>* Controle em uma dimensão (Horizontal ou vertical)</li>
@@ -342,17 +345,17 @@
               ```css <br>
               div.parent{
                 display:flex;
-              }
+              } <br>
               ````
             </li>
         </code>
       </ul>
-      <p>Flex-direction</p>
+      <h3>Flex-direction</h3>
         <ul>
           <li>* Qual a direção do flex:Horizontal ou vertical</li>
           <li>* Row | Column</li>
         </ul>
-        <p>Alinhamento</p>
+        <h3>Alinhamento</h3>
         <ul>
           <li>* Justify-content</li>
           <li>* align-items</li>
@@ -375,6 +378,229 @@
       </ul>
       <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Mais Sobre</a>
     </section>
+    <section>
+      <h2 id="fontproperties">Font-Properties</h2>
+      <h3>Trabalhando com fontes</h3>
+      <p>  Tipografia transmite mensagem.</p>
+      <ul>
+      <li>Negrito</li>
+      <li>Tamanho</li>
+      <li>Estilo</li>
+      </ul>
+      <h3>Basic Font Properties</h3>
+      <ul>
+        <li>Font-family</li>
+        <li>Font-weight</li>
+        <li>Font-style</li>
+        <li>Font-size</li>
+      </ul>
+      <h3>Font-family</h3>
+      <ul>
+        <li>Tipo de fonte de um elemento</li>
+        <li>Lista de fontes e ordem de prioridade</li>
+        <li>Inclui *fallback* font</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              font-family:"Times new roman", Times, serif;
+            } <br>
+            ````
+          </li>
+      </code>
+      <li>Serif</li>
+      <li>Sans</li>
+      </ul>
+      <h3>Font-weight</h3>
+      <ul>
+        <li>Peso da fonte</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              font-weight:bold;
+            } <br>
+            ````
+          </li>
+        </code>
+      </ul>
+      <h3>Font-style</h3>
+      <ul>
+        <li>O estilo da fonte</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              font-style:italic;
+            } <br>
+            ````
+          </li>
+        </code>
+      </ul>
+      <h3>Font-size</h3>
+      <ul>
+        <li>O tamanho da fonte</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              font-size:18px;
+            } <br>
+            ````
+          </li>
+        </code>
+      </ul>
+      <h3>Web fonts</h3>
+      <p>--Fonts do sistema x fontes da web <br>
+      --Como usar fontes para web?</p>
+      <ul>
+        <li>@font-face</li>
+        <li>@import</li>
+        <li>link</li>
+      </ul>
+      <h3>Font-variant</h3>
+      <ul>
+        <li>Variações na apresentação fonte</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              font-variant:small-caps;
+            } <br>
+            ````
+          </li>
+        </code>
+      </ul>
+      <h3>Font-stretch</h3>
+      <ul>
+        <li>Alargamento ou encolhimento da fonte</li>
+        <li>Aceita palavras-chaves como:expanded,condensed,normal</li>
+        <li>Aceita porcentagens de 50% a 200%</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              font-stretch:expanded;
+            } <br>
+            ````
+          </li>
+        </code>
+      </ul>
+      <h3>Letter-spacing</h3>
+      <ul>
+        <li>Espaços entre caracteres</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              letter-spacing:4px;
+            } <br>
+            ````
+          </li>
+        </code>
+      </ul>
+      <h3>Word-spacing</h3>
+      <ul>
+        <li>Espaços entre palavras</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              word-spacing:4px;
+            } <br>
+            ````
+          </li>
+        </code>
+      </ul>
+      <h3>Line-height</h3>
+      <ul>
+        <li>Espaços entre linhas</li>
+        <li>Pode ser com unidades ou sem unidades de medida</li>
+        <li>Comuns:1.5 ou 2</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              line-height:1.6;
+            } <br>
+            ````
+          </li>
+        </code>
+      </ul>
+      <h3>Text-transform</h3>
+      <ul>
+        <li>Trasformação do texto</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              text-transform:upercase;<!-- capitslize | lowercase | none -->
+            } <br>
+            ````
+          </li>
+        </code>
+      </ul>
+      <h3>Text-decoration</h3>
+      <ul>
+        <li>Aparencia decorativa de um texto</li>
+        <li>Line:underline | overline | line-through <br>
+          <strong>*podemos aplicar mais de 1 valor </strong></li>
+        <li>Style:wavy | dotted | double | dashed | solid</li>
+        <li>Color: `&lt;color&gt;´ values</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              text-decoration:undeline; <!-- shorthand -->
+            } <br>
+            ````
+          </li>
+        </code>
+      </ul>
+      <h3>Text-aling</h3>
+      <ul>
+        <li>Alinhamento de um texto</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              text-align:center;
+            } <br>
+            ````
+         </code>
+          </li>
+      </ul>
+      <h3>Text-shadow</h3>
+      <ul>
+        <li>Sombra aplicada a um texto</li>
+        <li>Permite múltiplos valores</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+              text-shadow:1px 1px 1px red,<br>
+              2px 2px 2px green;
+            } <br>
+            ````
+         </code>
+          </li>
+      </ul>
+      <h3>Shorthand</h3>
+      <ul>
+        <li>Font-style,Font-variant,font-weight,font-stretch,font-size,line-height e font-family</li>
+        <code>
+          <li>
+            ```css <br>
+            p{
+             font:italic normal bold normal 3em/1.5 helvetica, arial, sans-serif;
+            } <br>
+            ````
+         </code>
+          </li>
+       </ul>
+      <a href="https://developer.mozilla.org/en-US/search?q=font">Mais Sobre</a>
+    </section>
+    
     
     
   </main>
