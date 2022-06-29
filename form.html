@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <main>
+      <h1>Formulário</h1>
+      <h2>Form</h2>
+      <ul>
+        <li>Elemento que definirá um formulário</li>
+        <li>È um container estilo &lt;section&gt; &lt;footer&gt;</li>
+      </ul>
+      <h3>Atributos básicos</h3>
+      <ul>
+        <li>Action</li>
+        <li>Method</li>
+      </ul>
+      <h2>Fieldset</h2>
+      <ul>
+        <li>Agrupamento de campos</li>
+        <li>Mesmo propósito</li>
+        <li>Semãntico</li>
+        <li>Acessibilidade</li>
+      </ul>
+      <h3>Atributos especiais</h3>
+      <p>-Disabled</p>
+      <ul>
+        <li>desabilita todos os elementos internos</li>
+        <li>Não serão enviados ao submeter o formulário</li>
+      </ul>
+      <p>-Form</p>
+      <ul>
+        <li>O id de um formulário ao qual esse fieldset pertence</li>
+        <li>Não precisa estar dentro do formulário</li>
+      </ul>
+      <p>-Name</p>
+      <ul>
+        <li>Nome do grupo</li>
+      </ul>
+      <h2>Legend</h2>
+      <ul>
+        <li>Nome do agrupamento</li>
+        <li>Primeiro elemento dentro do fieldset</li>
+      </ul>
+      <h2>Label</h2>
+      <ul>
+        <li>Associar e identificar uma (ou mais) tag de entrada de dados</li>
+        <li>Acessibilidade</li>
+        <li>Você poderá clicar para mudar o foco da entrada de dados</li>
+      </ul>
+      <h3>Atributos</h3>
+      <p>-For</p>
+      <ul>
+        <li>
+          Para faer a conexão entre este label e a tag de entrada de dados
+        </li>
+        <li>É feita via id do input</li>
+        <li>Só funciona com elementos específicos</li>
+        <li>
+          -Button, input, (not hidden), meter, output, progress, select,
+          textarea
+        </li>
+      </ul>
+      <h2>Button</h2>
+      <ul>
+        <li>Representa um botão</li>
+        <li>Usado para enviar formulários</li>
+        <li>É estilizado pelo user agent</li>
+      </ul>
+      <h3>Atributos comuns</h3>
+      <p>-Type</p>
+      <ul>
+        <li>Submit</li>
+        <li>Reset</li>
+        <li>Button</li>
+        <li>-Autofocus</li>
+        <li>-Disabled</li>
+        <li>-Name</li>
+        <li>-Value</li>
+        <li>-Form</li>
+      </ul>
+      <h2>Datalist</h2>
+      <ul>
+        <li>Lista de valores como sugestão a uma tag &lt;input&gt;</li>
+        <li>Valores sugestivos e não obrigadotórios</li>
+        <li>
+          Usuários poderão selecionar um dos valores, ou colocar um valor
+          difeente da sugestão
+        </li>
+      </ul>
+      <h3>List</h3>
+      <ul>
+        <li>
+          Recebe como valor o id de um &lt;datalist&gt; residente no mesmo
+          documento
+        </li>
+      </ul>
+      <h3>Tipos de input suportados</h3>
+      <ul>
+        <li>
+          Text, search, url, tel, email, date, month, week, time,
+          datetime-local, number, range e color
+        </li>
+      </ul>
+      <p>
+        *Valores de datalist que não são compatíveis com o tipo do &lt;input&gt;
+        não serão apresentados
+      </p>
+      <h3>Tipos de input não suportados (conforme especificação)</h3>
+      <ul>
+        <li>
+          hidden, password, checkbox, radio, file, ou qualquer tipo de button
+        </li>
+      </ul>
+      <h3>User agent</h3>
+      <p>
+        Verificar a compatibilidade com o browser
+        <a href="https://caniuse.com">click aqui</a>
+      </p>
+
+      <!-- FORM -->
+      <section class="form">
+        <form id="contato" action="">
+          <fieldset>
+            <legend>Contato</legend>
+
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" value="" /> <br />
+            <label for="fruta">Fruta:</label>
+            <input
+              id="fruta"
+              type="text"
+              list="fruitsdata"
+              placeholder="Escolha uma fruta"
+            />
+            <br />
+
+            <datalist id="fruitsdata">
+              <option>apple</option>
+              <option>banana</option>
+              <option>mango</option>
+              <option>orange</option>
+              <option>cherry</option>
+            </datalist>
+            <label for="color">Cor:</label>
+            <input id="color" type="color" list="colorsdata" />
+            <datalist id="colorsdata">
+              <option>#343499</option>
+              <option>#903432</option>
+              <option>#126050</option>
+              <option>#501245</option>
+              <option>#247030</option>
+            </datalist>
+          </fieldset>
+
+          <button type="submit" form="contato">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <button class="button" >
+        <a  href="index.html">Voltar</a>
+      </button> 
+    </footer>
+  </body>
+</html>

@@ -88,14 +88,16 @@ p{
 button{
   border:none;
   border-radius:.4rem;
-  padding:0.01rem;
   background-color: violet;
   color:black;
-
-  display: flex;
-  justify-content: center;
-  margin: 1.5rem auto;
+  margin:2rem auto;
 }
+.buttonh{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 
 a{
   color:white;
