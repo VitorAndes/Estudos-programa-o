@@ -128,6 +128,87 @@
         Verificar a compatibilidade com o browser
         <a href="https://caniuse.com">click aqui</a>
       </p>
+      <h2>Input</h2>
+      <ul>
+        <li>Um dos mais usados em formulários</li>
+        <li>Aceita os mais diversos tipos de dados</li>
+        <li>Um dos mais poderosos e complexos</li>
+        <li>Elevado número de combinações</li>
+      </ul>
+      <h3>Atributos</h3>
+      <ul>
+        <li>Type</li>
+        <li>Name</li>
+        <li>Id</li>
+      </ul>
+      <h3>Atributos comuns</h3>
+      <ul>
+        <li>Autocomplete</li>
+        <li>Autofocus</li>
+        <li>Disabled</li>
+        <li>Readonly(quase todos)</li>
+        <li>Value</li>
+        <li>Form(quase todos)</li>
+        <li>Name</li>
+        <li>Required(quase todos)</li>
+        <li>Placeholder(quase todos)</li>
+      </ul>
+      <h2>Input- type=password</h2>
+      <ul>
+        <li>Colocar uma senha de maneira segura</li>
+        <li>Esconde o que está sendo digitado no campo</li>
+        <li>O estilo da apresentação do campo,depende do user agent</li>
+      <h3>Atributos</h3>
+        <li>Minlength / maxlength</li>
+      <p>* O número mínimo e/ou máximo de caracteres para este campo</p>
+        <li>Size</li>
+      <p>* O número aceitavél de caracteres que esse campo deverá conter</p>
+        <li>Pattern</li>
+      <p>* Expressão regular para validar o que está sendo digitado no campo <br>
+         * Altamente recomendado o uso de um padrão de segurança alta de senhas <br>
+         * Exemplo: queremos que a senha contenha caracteres hexadecimais com o limite de no mínimo 4 e no máximo 8 caracteres <br>
+         * Pattern="[0-9a-fA-F]{4,8}"</p>
+          <li>Placeholder</li>
+         <p>* Monstra um exemplo de texto a ser digitado no campo</p>
+          <li>Readonly/Disabled</li>
+          <p>* Atributo booleano indicando se o campo está habilitado ou não</p>
+          <li>Required</li>
+          <p>* O campo será obrigatório</p>
+          <li>Inputmode</li>
+          <p>* Poderá alterar o uso do teclado em smartphones <br>
+             * Exemplo: queremos que o cliente só adicione números <br>
+             * inputmode="numeric"</p>
+             <li>Autocomplete</li>
+             <p>* On: permite a sugestão de: new-passoword ou current-password <br>
+                * Off: desabilita a opção de autocompletar <br>
+                * New-password: o navegador poderá sugerir uma nova senha</p>
+         </ul>
+         <h2>Input- type=Email</h2>
+         <ul>
+          <li>Espera que o usuário digite um email</li>
+          <li>Irá validar se o valor digitado é um email</li>
+          <h3>Atributos</h3>
+          <li>Placeholder</li>
+          <li>Readonly/Disabled</li>
+          <li>Value</li>
+          <li>Required</li>
+          <li>Mutiple</li>
+          <p>* O campo irá receber 1 ou mais emails,separado por vírgulas</p>
+          <li>Minlength/Maxlength</li>
+          <p>* O mínimo e/ou máximo valor que o campo irá conter</p>
+          <li>Size</li>
+          <p>* Valor númerico indicando quantos caracteres esse campo deveria conter,modificando o tamanho do campo para o usuário</p>
+          <li>Pattern</li>
+          <p>* Uso de expressão regular para validar o campo <br>
+             * Exemplo: o usuário só poderá colocar email do domínio rocketseat.com.br <br>
+             * pattern:"[.+@rocketseat\.com\.br"]</p>
+             <li>List</li>
+             <p>* O id de uma tag &lt;datalist&gt; que está no mesmo documento <br>
+                * &lt;datalist&gt; irá conter uma lista de valores pré definidos a fim de sugerir ao usuário,quais valores estão disponíveis <br>
+                * Os valores do &lt;datalist&gt; que não forem compatíveis com o campo,serão apresenrados como sugestão</p>
+         </ul>
+         
+
 
       <!-- FORM -->
       <section class="form">
@@ -136,7 +217,12 @@
             <legend>Contato</legend>
 
             <label for="nome">Nome:</label>
-            <input id="nome" type="text" value="" /> <br />
+            <input
+              id="nome"
+              type="text"
+              required
+              placeholder="Digite seu nome"
+            />
             <label for="fruta">Fruta:</label>
             <input
               id="fruta"
@@ -144,7 +230,6 @@
               list="fruitsdata"
               placeholder="Escolha uma fruta"
             />
-            <br />
 
             <datalist id="fruitsdata">
               <option>apple</option>
@@ -162,16 +247,33 @@
               <option>#501245</option>
               <option>#247030</option>
             </datalist>
+            <label for="password">Senha:</label>
+            <input
+              id="password"
+              type="password"
+              required
+              placeholder="Digite sua senha"
+              minlength="4"
+              maxlength="8"
+
+            />
+            <label for="email">Email:</label>
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="Digite seu email"
+            />
           </fieldset>
 
-          <button type="submit" form="contato">Enviar</button>
+          <button id="buttonf" type="submit" form="contato">Enviar</button>
         </form>
       </section>
     </main>
     <footer>
-      <button class="button" >
-        <a  href="index.html">Voltar</a>
-      </button> 
+      <button class="button">
+        <a href="index.html">Voltar</a>
+      </button>
     </footer>
   </body>
 </html>
