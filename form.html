@@ -158,77 +158,267 @@
         <li>Colocar uma senha de maneira segura</li>
         <li>Esconde o que está sendo digitado no campo</li>
         <li>O estilo da apresentação do campo,depende do user agent</li>
-      <h3>Atributos</h3>
+        <h3>Atributos</h3>
         <li>Minlength / maxlength</li>
-      <p>* O número mínimo e/ou máximo de caracteres para este campo</p>
+        <p>* O número mínimo e/ou máximo de caracteres para este campo</p>
         <li>Size</li>
-      <p>* O número aceitavél de caracteres que esse campo deverá conter</p>
+        <p>* O número aceitavél de caracteres que esse campo deverá conter</p>
         <li>Pattern</li>
-      <p>* Expressão regular para validar o que está sendo digitado no campo <br>
-         * Altamente recomendado o uso de um padrão de segurança alta de senhas <br>
-         * Exemplo: queremos que a senha contenha caracteres hexadecimais com o limite de no mínimo 4 e no máximo 8 caracteres <br>
-         * Pattern="[0-9a-fA-F]{4,8}"</p>
-          <li>Placeholder</li>
-         <p>* Monstra um exemplo de texto a ser digitado no campo</p>
-          <li>Readonly/Disabled</li>
-          <p>* Atributo booleano indicando se o campo está habilitado ou não</p>
-          <li>Required</li>
-          <p>* O campo será obrigatório</p>
-          <li>Inputmode</li>
-          <p>* Poderá alterar o uso do teclado em smartphones <br>
-             * Exemplo: queremos que o cliente só adicione números <br>
-             * inputmode="numeric"</p>
-             <li>Autocomplete</li>
-             <p>* On: permite a sugestão de: new-passoword ou current-password <br>
-                * Off: desabilita a opção de autocompletar <br>
-                * New-password: o navegador poderá sugerir uma nova senha</p>
-         </ul>
-         <h2>Input- type=Email</h2>
-         <ul>
-          <li>Espera que o usuário digite um email</li>
-          <li>Irá validar se o valor digitado é um email</li>
-          <h3>Atributos</h3>
-          <li>Placeholder</li>
-          <li>Readonly/Disabled</li>
-          <li>Value</li>
-          <li>Required</li>
-          <li>Mutiple</li>
-          <p>* O campo irá receber 1 ou mais emails,separado por vírgulas</p>
-          <li>Minlength/Maxlength</li>
-          <p>* O mínimo e/ou máximo valor que o campo irá conter</p>
-          <li>Size</li>
-          <p>* Valor númerico indicando quantos caracteres esse campo deveria conter,modificando o tamanho do campo para o usuário</p>
-          <li>Pattern</li>
-          <p>* Uso de expressão regular para validar o campo <br>
-             * Exemplo: o usuário só poderá colocar email do domínio rocketseat.com.br <br>
-             * pattern:"[.+@rocketseat\.com\.br"]</p>
-             <li>List</li>
-             <p>* O id de uma tag &lt;datalist&gt; que está no mesmo documento <br>
-                * &lt;datalist&gt; irá conter uma lista de valores pré definidos a fim de sugerir ao usuário,quais valores estão disponíveis <br>
-                * Os valores do &lt;datalist&gt; que não forem compatíveis com o campo,serão apresenrados como sugestão</p>
-         </ul>
-         
-
+        <p>
+          * Expressão regular para validar o que está sendo digitado no campo
+          <br />
+          * Altamente recomendado o uso de um padrão de segurança alta de senhas
+          <br />
+          * Exemplo: queremos que a senha contenha caracteres hexadecimais com o
+          limite de no mínimo 4 e no máximo 8 caracteres <br />
+          * Pattern="[0-9a-fA-F]{4,8}"
+        </p>
+        <li>Placeholder</li>
+        <p>* Monstra um exemplo de texto a ser digitado no campo</p>
+        <li>Readonly/Disabled</li>
+        <p>* Atributo booleano indicando se o campo está habilitado ou não</p>
+        <li>Required</li>
+        <p>* O campo será obrigatório</p>
+        <li>Inputmode</li>
+        <p>
+          * Poderá alterar o uso do teclado em smartphones <br />
+          * Exemplo: queremos que o cliente só adicione números <br />
+          * inputmode="numeric"
+        </p>
+        <li>Autocomplete</li>
+        <p>
+          * On: permite a sugestão de: new-passoword ou current-password <br />
+          * Off: desabilita a opção de autocompletar <br />
+          * New-password: o navegador poderá sugerir uma nova senha
+        </p>
+      </ul>
+      <h2>Input- type=Email</h2>
+      <ul>
+        <li>Espera que o usuário digite um email</li>
+        <li>Irá validar se o valor digitado é um email</li>
+        <h3>Atributos</h3>
+        <li>Placeholder</li>
+        <li>Readonly/Disabled</li>
+        <li>Value</li>
+        <li>Required</li>
+        <li>Mutiple</li>
+        <p>* O campo irá receber 1 ou mais emails,separado por vírgulas</p>
+        <li>Minlength/Maxlength</li>
+        <p>* O mínimo e/ou máximo valor que o campo irá conter</p>
+        <li>Size</li>
+        <p>
+          * Valor númerico indicando quantos caracteres esse campo deveria
+          conter,modificando o tamanho do campo para o usuário
+        </p>
+        <li>Pattern</li>
+        <p>
+          * Uso de expressão regular para validar o campo <br />
+          * Exemplo: o usuário só poderá colocar email do domínio
+          rocketseat.com.br <br />
+          * pattern: " [.+@rocketseat\.com\.br" ]
+        </p>
+        <li>List</li>
+        <p>
+          * O id de uma tag &lt;datalist&gt; que está no mesmo documento <br />
+          * &lt;datalist&gt; irá conter uma lista de valores pré definidos a fim
+          de sugerir ao usuário,quais valores estão disponíveis <br />
+          * Os valores do &lt;datalist&gt; que não forem compatíveis com o
+          campo,serão apresentados como sugestão
+        </p>
+      </ul>
+      <h2>Input type=url</h2>
+      <ul>
+        <li>Espera que o usuário digite uma url</li>
+        <li>Irá validar se o valor digitado é uma url</li>
+        <h3>Atributos</h3>
+        <li>Placeholder</li>
+        <li>Readonly/Disabled</li>
+        <li>Value</li>
+        <li>Required</li>
+        <li>Minlength/Maxlength</li>
+        <p>* O mínimo e/ou máximo valor que o campo irá conter</p>
+        <li>Size</li>
+        <p>
+          * Valor númerico indicando quantos caracteres esse campo deveria
+          conter,modificando o tamanho do campo para o usuário
+        </p>
+        <li>Pattern</li>
+        <p>
+          * Uso de expressão regular para validar o campo <br />
+          * Exemplo: o usuário só poderá colocar domínio .com.br <br />
+          * pattern: ".*\.com\.br\/.*"
+        </p>
+        <li>List</li>
+        <p>
+          * O id de uma tag &lt;datalist&gt; que está no mesmo documento <br />
+          * &lt;datalist&gt; irá conter uma lista de valores pré definidos a fim
+          de sugerir ao usuário,quais valores estão disponíveis <br />
+          * Os valores do &lt;datalist&gt; que não forem compatíveis com o
+          campo,serão apresentados como sugestão
+        </p>
+        <li>Spellcheck</li>
+        <p>* Habilitar a verificação ortográfica para este input</p>
+      </ul>
+      <h2>Input type=file</h2>
+      <ul>
+        <li>
+          Usuário poderá escolher 1 ou mais arquivos para enviar no formulário
+        </li>
+        <h3>Atributos</h3>
+        <li>Value</li>
+        <p>* Contém o arquivo a ser enviado</p>
+        <li>Accept</li>
+        <p>* Exemplo:.doc, .docx, .pdf, audio/*, image/png, .png</p>
+        <li>Files</li>
+        <p>* A lista de arquivo ou arquivos</p>
+        <li>Multiple</li>
+        <p>* Permite o emvio de múltiplus arquivos</p>
+        <li>Envio de arquivos</li>
+        <p>
+          Para envio dos arquivos o formulário deverá utilizar o método POST e o
+          atributo enctype como "multipart/form-data"
+        </p>
+      </ul>
+      <h2>Input type=color</h2>
+      <ul>
+        <li>Interface para selecionar cor</li>
+        <li>Color picker</li>
+        <h3>Atributos</h3>
+        <li>Value:RGB</li>
+        <p>* Se inválido,o preto será exibido</p>
+        <li>List</li>
+        <p>
+          * O id de uma tag &lt;datalist&gt; que está no mesmo documento <br />
+          * &lt;datalist&gt; irá conter uma lista de valores pré definidos a fim
+          de sugerir ao usuário,quais valores estão disponíveis <br />
+          * Os valores do &lt;datalist&gt; que não forem compatíveis com o
+          campo,serão apresentados como sugestão
+        </p>
+      </ul>
+      <h2>Input type=checkbox</h2>
+      <ul>
+        <li>Caixas que podem ser marcadas</li>
+        <li>Selecionar um valor para ser enviado</li>
+        <li>Se não selecionado,não será enviado nenhum dado</li>
+        <h3>Atributos</h3>
+        <li>Globais</li>
+        <li>Value</li>
+        <p>
+          * valor que aquele campo contém <br />
+          * Se não estiver presente,o padrão é 'on'
+        </p>
+        <li>Checked</li>
+        <p>* Para deixar o campo marcado por padrão</p>
+        <h3>Marcar múltiplos valores</h3>
+        <li>
+          Usaremos o atributo 'name' com o mesmo nome para os diversos campos
+        </li>
+      </ul>
+      <h2>Input type=hidden</h2>
+      <ul>
+        <li>Invisível ao usuário</li>
+        <li>Será enviado com o formulário</li>
+        <li>Não receberá foco</li>
+        <li>Leitores de tela não percebem esse campo</li>
+      </ul>
+      <h2>Input type=radio</h2>
+      <ul>
+        <li>Projetado para selecionar uma única opção de um grupo de opções</li>
+        <h3>Atributos Essenciais</h3>
+        <li>Checked</li>
+        <p>* Indica que o campo foi marcado</p>
+        <li>Value</li>
+        <p>* Valor que aquele campo contém</p>
+      </ul>
+      <h2>TextArea</h2>
+      <ul>
+        <li>Mais de uma linha</li>
+        <li>Útil para textos grandes</li>
+        <h3>Atributos</h3>
+        <li>Id</li>
+        <li>Name</li>
+        <li>Rows e cols</li>
+        <li>Maxlength e minlength</li>
+        <li>Wrap</li>
+        <li>Outros comuns aos &lt;input&gt;s</li>
+        <p>
+          * Autocomplete, Autofocus, disabled, placeholder, readonly, form,
+          required
+        </p>
+      </ul>
+      <h2>Select</h2>
+      <ul>
+        <li>Controle que fornece um menu de opções</li>
+        <h3>Option</h3>
+        <li>Contém as opções a serem selecionadas</li>
+        <li>Atributos necessários</li>
+        <p>* Value</p>
+        <h3>Atributos únicos</h3>
+        <li>Multiple</li>
+        <p>* Habilita múltiplas opções</p>
+        <li>Size</li>
+        <p>* Quando opções visíveis?</p>
+      </ul>
+      <h2>Input type=search</h2>
+      <ul>
+        <li>Para campos de busca</li>
+        <li>
+          É igual ao campo do tipo 'text' mas poderá ser um pouco diferente
+          dependendo do user agent
+        </li>
+        <h3>Atributos</h3>
+        <li>List / &lt;datalist&gt;</li>
+        <li>Pattern</li>
+        <li>Aria-label</li>
+      </ul>
+      <h2>Input type=number</h2>
+      <ul>
+        <li>Entrada de números</li>
+        <h3>Atributos</h3>
+        <li>Min/max</li>
+        <li>Step</li>
+      </ul>
+      <h2>Input type=range</h2>
+      <ul>
+        <li>Controle para selecionar um valor numérico</li>
+        <li>Slider ou dial control</li>
+        <h3>Atributos</h3>
+        <li>Min/Max</li>
+        <li>Step</li>
+      </ul>
+      <h2>Outros campos interessantes</h2>
+      <ul>
+        <li>Input type=date</li>
+        <li>Input type=time</li>
+        <li>Input type=week</li>
+        <li>Input type=month</li>
+      </ul>
+      
+      <div class="divider"></div>
+      <h2>Formulário</h2>
 
       <!-- FORM -->
-      <section class="form">
-        <form id="contato" action="">
-          <fieldset>
-            <legend>Contato</legend>
+      <section >
+        <form  id="contato" method="post" enctype="multipart/form-data">
+          <fieldset class="form">
+            <legend>Formulário</legend>
 
-            <label for="nome">Nome:</label>
+            <label for="nome" >Nome:</label> <br>
             <input
               id="nome"
               type="text"
               required
               placeholder="Digite seu nome"
-            />
-            <label for="fruta">Fruta:</label>
+              name="nome"
+              />
+              <br>
+            <label for="fruta" >Fruta:</label> <br>
             <input
               id="fruta"
               type="text"
               list="fruitsdata"
               placeholder="Escolha uma fruta"
+              name="fruta"
             />
 
             <datalist id="fruitsdata">
@@ -238,8 +428,9 @@
               <option>orange</option>
               <option>cherry</option>
             </datalist>
-            <label for="color">Cor:</label>
-            <input id="color" type="color" list="colorsdata" />
+            <br>
+            <label for="color">Cor:</label> <br>
+            <input id="color" type="color" list="colorsdata" value="#343490" />
             <datalist id="colorsdata">
               <option>#343499</option>
               <option>#903432</option>
@@ -247,7 +438,8 @@
               <option>#501245</option>
               <option>#247030</option>
             </datalist>
-            <label for="password">Senha:</label>
+            <br>
+            <label for="password">Senha:</label> <br>
             <input
               id="password"
               type="password"
@@ -255,25 +447,95 @@
               placeholder="Digite sua senha"
               minlength="4"
               maxlength="8"
-
+              name="password"
             />
-            <label for="email">Email:</label>
+            <br>
+            <label for="email">Email:</label><br>
             <input
-              id="email"
-              type="email"
+            id="email"
+            type="email"
               required
               placeholder="Digite seu email"
+              name="email"
             />
-          </fieldset>
+            <br>
+            <label for="url">Url:</label> <br>
+            <input
+              id="url"
+              type="url"
+              required
+              placeholder="https://example.com.br"
+              pattern=".*\.com\.br.*"
+              title="Somente domínios .com.br serão aceitos"
+              />
+              <br>
+              <label for="files">Files:</label> <br>
+              <input id="files" type="file" accept="image/*" multiple />
+              <br>
+              <legend>Choose your interests</legend>
+              <input
+                type="checkbox"
+                id="coding"
+                name="interest"
+                value="coding"
+              />
+              <label for="coding">Coding</label>
 
-          <button id="buttonf" type="submit" form="contato">Enviar</button>
-        </form>
-      </section>
-    </main>
+              <input type="checkbox" id="music" name="interest" value="music" />
+              <label for="music">Music</label> <br>
+       
+              <input type="hidden" name="id" value="8" />
+              <legend>Bora tomar um café?</legend>
+              <label for="yep">Sim</label>
+              <input type="radio" id="yep" name="coffee" value="yes" />
+              <label for="nono">Não</label>
+              <input type="radio" id="nono" name="coffee" value="no" checked />
+         <br>
+            <label for="textarea">Área de texto</label> <br>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="10"
+              rows="5"
+              placeholder="Digite seu texto"
+            ></textarea> 
+            <br>
+            <label for="select">Qual modelo do carro:</label><br>
+            
+            <select name="carmodel" id="select">
+              <option value="fiat">Uno</option>
+              <option value="audi">A3</option>
+              <option value="bmw">X6</option>
+              
+            </select>
+            <br>
+            <br>
+            <label for="search">Pesquisar pelo id:</label> <br>
+              <input
+                id="search"
+                type="search"
+                name="id"
+                pattern="[0-9]{4}"
+                title="Digite o número do ID:9999"
+                />
+                <!-- <button class="buttonp">Pesquisar</button> -->
+                <br>
+                <label for="number">Digite um número:</label> <br>
+                <input class="a"id="number" type="number" min="2" max="10000000"><br>
+                <input id="number" type="range" min="0" max="10000000" step="1">
+                <br>
+                <label for="data">Escolha uma data:</label> <br>
+                <input id="data" type="date">
+                <button class="buttonf" type="submit" form="contato">Enviar</button>
+              </fieldset>
+              
+            </form>
+          </section>
+        </main>
     <footer>
       <button class="button">
         <a href="index.html">Voltar</a>
       </button>
     </footer>
   </body>
-</html>
+  </html>
