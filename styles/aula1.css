@@ -93,11 +93,16 @@ button{
   background:linear-gradient(50deg,var(--button-color));
   
   color:black;
-  margin:2.4rem auto;
+  margin:2rem auto;
 }
+
+button a{
+  font-size:medium;
+}
+
 .buttonh{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
   
 }
 
