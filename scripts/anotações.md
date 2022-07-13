@@ -226,7 +226,7 @@ AULA 2 JS
 
  parameters
  const sum = function(sum1, sum2){
-    console.log(number(sum[1]) + number(sum[2]))
+    console.log(number(sum[1])) + number(sum[2]))
     console.log(sum[1] - sum[2])
     console.log(sum[1] * sum[2])
     console.log(sum[1]  sum[2])
@@ -404,3 +404,367 @@ AULA 2 JS
  techs.splice(index, 1)
 
  console.log(index)
+
+ AULA3 JS ----
+
+ 
+* Expressões e operadores
+
+-EXPRESSIONS
+-OPERATORS
+  BINARY
+  UNARY
+  TERNARY
+*
+
+ let number = 1
+
+ console.log(number + 1)
+ console.log(++number)
+ console.log(false ? 'alo' : 'nada')
+
+ NEW
+
+ left-hand-side expression 
+ criar um novo Object
+
+ let name = new String('vitor')
+ name.surName  = "andes"
+ let age = new Number(18)
+ let date = new Date("2021-03-10")
+ console.log(name, age, date)
+
+ *
+  Operadores unários
+  typeof
+  delete
+
+ *
+
+ const person = {
+   name:'vitor',
+   age:18,
+ }
+
+ delete person.age
+
+ console.log(person)
+
+*
+ Operadores aritimeticos
+*
+
+ multiplicação *
+ console.log(2 * 2)
+  divisão 
+ console.log(2  2)
+  soma +
+ console.log(2 + 2)
+  subtração -
+ console.log(2 - 2)
+
+  resto da divisão
+ let remainder
+ remainder = 11 % 3
+ console.log(remainder)
+
+  incremento ++
+ let increment = 0 
+ increment++
+ console.log(increment)
+
+  decremento --
+ let decrement = 0
+ console.log(--decrement)
+
+  exponencial **
+ console.log(3 ** 3)
+
+ grouping operator ()
+ let total =  (2 + 3) * 5
+ console.log(total)
+
+ OPERADORES DE COMPARAÇÃO
+
+ let one = 1
+ let two = 2
+
+  == igual a
+ console.log(two == 1)
+ console.log(one == '1')
+
+  != diferente de
+ console.log(one != two)
+ console.log(one != 1)
+ console.log(one != '1')
+
+ === estritamente igual a
+
+ let one = 1
+ let two = 2
+ console.log(one === '1')
+ console.log(one === 1)
+
+  !== estritamente diferente de
+ console.log(two !== '2')
+ console.log(two !== 2)
+
+ > Maior que
+ console.log(one > two)
+
+  >= Maior igual a
+ console.log(one >= 1)
+ console.log(two >= 1)
+
+  < Menor que 
+ console.log(onde < two)
+
+  <= Menor igual a
+ console.log(onde <= two)
+ console.log(one <= 1)
+ console.log(one <=0) 
+
+ operadores de atribuição (Assignment)
+ let x 
+
+ assigment
+ x = 1
+
+ addition assigment
+ x += 2
+
+ subtraction assignment
+ x -= 1
+
+ multiplicação 
+ x *= 2
+
+ divisão
+ x = 2
+
+ remainder, exponetiation
+ x %= 2
+ x **= 2
+
+ console.log(x)
+
+ Logical operators
+ - 2 valores booleanos, quando verificados,
+ resultará em verdadeiro ou falso
+
+ let pao = true
+ let queijo = false
+
+ AND &&
+ console.log(pao && queijo)
+
+ OR ||
+ console.log(pao || queijo)
+
+ NOT !
+ console.log(!pao)
+
+ Operador condicional (ternário)
+ condição então valor 1 se não valor 2
+ condition ? value: value2
+
+ exemplos
+ let pao = true
+ let queijo = true
+
+ const niceBreakFast = pao && queijo ? 'Café top' : 'Café ruim'
+ console.log(niceBreakFast)
+
+  maior de 18
+
+ let age = 16
+ const canDrive = age >= 18 ? 'Can drive' : "Can't drive"
+ console.log(canDrive)
+
+ STRING OPERATOR
+ comparison 
+ console.log('a' == 'a')
+
+  concatenation
+  retornar a união de duas strings
+ console.log('a' + 'a')
+ let alpha = "alpha"
+ console.log(alpha + 'bet')
+
+ typecasting vs typecoersion
+ console.log(Number('9') + 5)
+
+* FALSY
+  quando um valor é considerado false em contextos onde um booleano é obrigatório(condicionais e loops)
+
+  false
+  0
+  -0
+  ''
+  null
+  undefined
+  NaN
+
+*
+ console.log(false ? 'verdadeiro' : 'Falso')
+
+* TRUTHY
+   quando um valor é considerado true em contextos onde um booleano é obrigatório (condicionais e loops)
+
+   true 
+   {}
+   []
+   1
+   3.23
+   '0'
+   'false'
+   -1
+   Infinity
+   -Infinity
+   
+
+*
+ console.log(true ? 'verdadeiro' : 'Falso')
+
+* operator precedence
+grouping                  ( )
+negação e incremento      ! ++ --
+multiplicação e divisão   * 
+adição e subtração        + -
+relacional                < <= > >=c
+igualdade                 == != === !==
+AND                       &&
+OR                        ||
+condicional               ?:
+assignment                = += -= *= %=
+
+*
+
+ console.log(2 + 5 * 10)
+ console.log((2 + 5) * 10)
+ console.log(3 > 2 && 2 > 1)
+
+AULA4 JS -----
+
+  contro flow
+
+ se estiver sujo
+ console.log('lavar o copo')
+
+ console.log('servir café')
+
+ If ... else
+
+ let temperature = 37
+ let highTemperature = temperature >= 38
+ let mediumTemperature = temperature <= 37.5 && temperature >= 37
+
+ if(highTemperature){
+   console.log('Febre alta')
+ } else if(mediumTemperature){
+   console.log('Febre moderada')
+ } else{
+   console.log('Saudável')
+ }
+
+ Switch
+
+ let expression = ''
+
+ switch (expression) {
+   case 'a':
+     codigo
+     console.log('a')
+     break
+   case 'b':
+     codigo b
+     console.log('b')
+     break
+   default:
+     console.log('default')
+     break
+ }
+
+ function calculate(number1, operator, number2) {
+   let result
+
+   switch (operator) {
+     case '+':
+       result = number1 + number2
+       break
+     case '-':
+       result = number1 - number2
+       break
+     case '*':
+       result = number1 * number2
+       break
+     case '':
+       result = number1  number2 
+       break
+     default:
+       console.log('não implementado')
+       break
+   }
+   return result
+ }
+
+ console.log(calculate(4, '+', 8))
+
+ throw
+  function sayMyName(name = ''){
+   if(name === ''){
+     throw "Nome é onrigatório"
+      throw new Error('Nome é necessário')
+   }
+    console.log(name)
+  }
+
+  try...catch
+ try{
+   sayMyName('vitor')
+ } catch(e){
+ console.log(e)
+ }
+
+ console.log('após o trycatch')
+
+ ESTRUTURA DE REPETIÇÃO
+ FOR
+ break - para a execução do loop
+ continue - pula a execução do momento
+
+ for(let i = 10; 1 > 0; i--){
+   if(1 === 5){
+     break;
+   }
+ }
+ console.log(i)
+
+ while
+
+ let i = 0
+ while(i < 10){
+  console.log()
+  i++;
+ }
+
+ for...of
+ let name = 'vitor'
+ let names = ['vitor', 'joão', 'sah']
+
+ for(let name of names){
+ console.log(name)
+ }
+
+ for...in
+ 
+ let person = {
+   name: 'vitor',
+   age:18,
+   weight:50
+ }
+
+ for(let property in person){
+   console.log(property)
+   console.log(person[property])
+ }
