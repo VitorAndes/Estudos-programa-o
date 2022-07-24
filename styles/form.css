@@ -103,6 +103,7 @@ a{
   background:linear-gradient(350deg,var(--bg-color));
   margin:1rem;
   padding:1rem;
+  text-align: center;
  }
 
  section{
